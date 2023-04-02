@@ -1,0 +1,29 @@
+digraph Tree {
+node [shape=box, style="filled, rounded", color="black", fontname="helvetica"] ;
+edge [fontname="helvetica"] ;
+0 [label="Gender <= 66.0\ngini = 0.666\nsamples = 158\nvalue = [53, 54, 51]\nclass = Point_Guard", fillcolor="#fdfffe"] ;
+1 [label="gini = 0.0\nsamples = 31\nvalue = [31, 0, 0]\nclass = Play_Maker", fillcolor="#e58139"] ;
+0 -> 1 [labeldistance=2.5, labelangle=45, headlabel="True"] ;
+2 [label="Position <= 1.842\ngini = 0.628\nsamples = 127\nvalue = [22, 54, 51]\nclass = Point_Guard", fillcolor="#f7fefa"] ;
+0 -> 2 [labeldistance=2.5, labelangle=-45, headlabel="False"] ;
+3 [label="gini = 0.0\nsamples = 26\nvalue = [0, 26, 0]\nclass = Point_Guard", fillcolor="#39e581"] ;
+2 -> 3 ;
+4 [label="Position <= 1.945\ngini = 0.621\nsamples = 101\nvalue = [22, 28, 51]\nclass = Small_Forward", fillcolor="#d7c1f7"] ;
+2 -> 4 ;
+5 [label="Gender <= 87.441\ngini = 0.441\nsamples = 67\nvalue = [22, 0, 45]\nclass = Small_Forward", fillcolor="#bf9af2"] ;
+4 -> 5 ;
+6 [label="gini = 0.0\nsamples = 35\nvalue = [0, 0, 35]\nclass = Small_Forward", fillcolor="#8139e5"] ;
+5 -> 6 ;
+7 [label="Position <= 1.887\ngini = 0.43\nsamples = 32\nvalue = [22, 0, 10]\nclass = Play_Maker", fillcolor="#f1ba93"] ;
+5 -> 7 ;
+8 [label="gini = 0.0\nsamples = 10\nvalue = [0, 0, 10]\nclass = Small_Forward", fillcolor="#8139e5"] ;
+7 -> 8 ;
+9 [label="gini = 0.0\nsamples = 22\nvalue = [22, 0, 0]\nclass = Play_Maker", fillcolor="#e58139"] ;
+7 -> 9 ;
+10 [label="Gender <= 100.0\ngini = 0.291\nsamples = 34\nvalue = [0, 28, 6]\nclass = Point_Guard", fillcolor="#63eb9c"] ;
+4 -> 10 ;
+11 [label="gini = 0.0\nsamples = 28\nvalue = [0, 28, 0]\nclass = Point_Guard", fillcolor="#39e581"] ;
+10 -> 11 ;
+12 [label="gini = 0.0\nsamples = 6\nvalue = [0, 0, 6]\nclass = Small_Forward", fillcolor="#8139e5"] ;
+10 -> 12 ;
+}
